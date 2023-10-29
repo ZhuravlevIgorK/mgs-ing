@@ -1,0 +1,18 @@
+.goHome{
+    width: 150px;
+    height: 24px;
+    /* background-color: rgba(196, 196, 208, 0.713); */
+    border-style:outset;
+    margin-left: 80px;
+    border-radius: 20px;
+    padding-top: 6px;
+    font-weight: bold;
+    
+
+}
+
+.goHomeText {    
+    color: rgb(11, 3, 97);
+    margin-top: 10px;
+    text-decoration: none; 
+}

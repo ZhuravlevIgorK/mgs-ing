@@ -1,0 +1,15 @@
+td, th, table {
+    border-style:solid;
+    border-width: 1px; 
+    border-spacing: 0px;  
+    border-collapse: collapse;
+    padding: 7px;         
+} 
+
+tr:hover {
+    background-color: #978579;    
+}
+
+td:nth-child(even) {
+    text-align: left;
+}

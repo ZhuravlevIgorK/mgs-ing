@@ -1,0 +1,44 @@
+.linkBox {
+    margin-top: 20px; 
+    display: flex;
+    align-items: center;   
+    gap: 12px;    
+    /* justify-content:center;  */
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.styleLink {
+    min-height: 35px;
+    width: 300px;
+    border-radius: 10px;  
+    border-style:groove;
+    /* background-color:  rgb(226, 232, 238);   */
+    text-decoration:none; 
+    color: rgb(6, 0, 83);
+    border-width: 1px;    
+}
+
+.styleText {    
+    margin: 6px auto;  
+    font-weight: bolder; 
+}
+
+.linkBox:hover .imegLink {
+    animation: myAnim 3s linear infinite;  
+}
+
+@keyframes myAnim {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.text {
+    width: 28px;
+}

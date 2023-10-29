@@ -1,0 +1,43 @@
+.calculatorPage {
+    text-align: center; 
+    background-image:url('/calk.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding-top: 10px;     
+    
+}
+
+.calculatorClass {
+    font-weight: bold;    
+}
+.myPrice {
+    margin-left: auto;
+    padding: 10px;
+    margin-right: auto;    
+    width: 450px;    
+
+}
+
+.inputDate {
+    width: 350px;
+    display: flex;  
+    flex-direction: column;
+    align-items: start;
+    margin-left: 30px; 
+}
+
+.Footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 34px;
+    height: 45px;  
+    background-color: rgba(255, 0, 0, 0);  
+    border-radius: 8px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.789);
+    color: rgb(0, 0, 0);
+}
