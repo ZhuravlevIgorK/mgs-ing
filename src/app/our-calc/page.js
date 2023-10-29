@@ -1,13 +1,13 @@
 'use client';
-import style from "./costCalculator.module.css";
+import style from "./ourCalc.module.css";
 import GoHome from "../goHome/goHome.js";
-import PriceСalculator from "../priceСalculator/priceСalculator";
+import PriceСalculator from "../../components/priceСalculator/priceСalculator";
 import { useState } from "react";
 import React from "react";
 import TelegramBot from "../telegramBot/telegramBot";
 
 export default function Calculator() {  
-    const [typeObject, setTypeObject] = useState()
+    const [typeObject, setTypeObject] = useState('')
     const [squareObject, setSquareObject] = useState(1);
     const [meterObject, setMeterObject] = useState(0)   
 
@@ -48,7 +48,7 @@ export default function Calculator() {
                     /> 
                 </div>  
             </div>                                  
-            <PriceСalculator squareObject = {squareObject} typeObject = {typeObject} meter = {meterObject}  />
+            <PriceСalculator squareObject={squareObject} typeObject={typeObject} meter={meterObject}  />
 
             <footer className={style.Footer}>
                 &copy; Все права защищены: 2022 - {new Date().getFullYear()} год.

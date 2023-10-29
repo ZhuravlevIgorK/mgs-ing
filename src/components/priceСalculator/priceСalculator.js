@@ -1,5 +1,7 @@
 import styles from "./priceСalculator.module.css";
-import { TableExport } from "tableexport";
+import { DownloadTableExcel } from 'react-export-table-to-excel';
+import { useRef } from "react";
+
 
 const ourPrice = {
     hous: { ОВиК:{П:50, РД:108}, ЭОМ:{П:43, РД:86}, СС:{П:36, РД: 76}, В:{П:22, РД: 32}, К:{П:22, РД: 32}, ЭЭ:{П:40,}, НВК:{П:220, РД:330},ТП:{П:120, РД:180}, СетиС:{П:72, РД:110}, ЭС:{П:90, РД:130}},
@@ -8,8 +10,9 @@ const ourPrice = {
     warehouse: { ОВиК:{П:44, РД:95}, ЭОМ:{П:38, РД:76}, СС:{П:32, РД: 66}, В:{П:19, РД: 28}, К:{П:19, РД: 28}, ЭЭ:{П:40,}, НВК:{П:220, РД:330},ТП:{П:120, РД:180}, СетиС:{П:72, РД:110}, ЭС:{П:90, РД:130}},
 }
 
-export default function priceСalculator(props) {
-    let square = props.squareObject;
+export default function PriceСalculator(props) {
+    const tableRef = useRef(null);
+    let square = props.squareObject; 
     let type = props.typeObject;
     let meter = props.meter;
 
@@ -23,20 +26,19 @@ export default function priceСalculator(props) {
     } else {
         myPrice = ourPrice.warehouse
     }
-
-    const downloadPrice = () => {
-        TableExport(document.getElementById("ourPrice"), {
-            formats: ["xlsx"],
-            filename: "ourPrice",
-            sheetname: "ourPrice",
-        });  
-        return false      
-    };
-  
-    
+        
     return (
         <div className={styles.priceСalculator}>
-            <table id="ourPrice">
+            <div>           
+                <DownloadTableExcel
+                    filename="users table"
+                    sheet="users"
+                    currentTableRef={tableRef.current}                    
+                >
+                    <button style={{fontSize:"16px", color:'red', fontWeight:"bold", marginTop:"15px"}}>Скачать расчет</button>                 
+                </DownloadTableExcel>                      
+            </div>
+            <table ref={tableRef}>
                 <caption className={styles.titleTable}>Цена расчитывается автоматически, после введения исходных данных</caption>
                 <thead>
                     <tr>
@@ -117,9 +119,7 @@ export default function priceСalculator(props) {
                 </tbody>
             </table> 
           
-            <div>                
-                <button onClick={ downloadPrice } style={{fontSize:"16px", color:'red', fontWeight:"bold", marginTop:"15px"}}>Скачать расчет</button>                  
-            </div>
+            
         </div>      
 
     )
