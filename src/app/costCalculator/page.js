@@ -9,15 +9,7 @@ import TelegramBot from "../telegramBot/telegramBot";
 export default function Calculator() {  
     const [typeObject, setTypeObject] = useState()
     const [squareObject, setSquareObject] = useState(1);
-    const [meterObject, setMeterObject] = useState(0)
-
-    const fgt = () => {
-        let link = document.createElement('a');
-        link.download = 'hello.txt';
-        let blob = new Blob(['Hello, world!'], {type: 'text/plain'});
-        link.href = URL.createObjectURL(blob);
-        link.click()        
-    };
+    const [meterObject, setMeterObject] = useState(0)   
 
     return (
     <div className={style.calculatorPage}>
