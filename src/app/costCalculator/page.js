@@ -1,5 +1,5 @@
 'use client';
-import style from "./costCalculator.module.scss";
+import style from "./costCalculator.module.css";
 import GoHome from "../goHome/goHome.js";
 import PriceСalculator from "../priceСalculator/priceСalculator";
 import { useState } from "react";
