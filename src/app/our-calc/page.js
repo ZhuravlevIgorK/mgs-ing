@@ -47,9 +47,10 @@ export default function Calculator() {
                         onChange={(e) => setMeterObject(e.target.value)}
                     /> 
                 </div>  
-            </div>                                  
-            <PriceСalculator squareObject={squareObject} typeObject={typeObject} meter={meterObject}  />
-
+            </div>       
+            <div>                            
+                <PriceСalculator squareObject={squareObject} typeObject={typeObject} meter={meterObject} />
+            </div> 
             <footer className={style.Footer}>
                 &copy; Все права защищены: 2022 - {new Date().getFullYear()} год.
                 <TelegramBot/> 

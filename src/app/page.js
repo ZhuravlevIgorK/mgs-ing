@@ -44,9 +44,7 @@ export default function Home() {
         <footer className={styles.Footer}>
           &copy; Все права защищены: 2022 - {new Date().getFullYear()} год.
           <TelegramBot/> 
-        </footer>   
-
-
+        </footer>  
           
       </div>          
     </main>

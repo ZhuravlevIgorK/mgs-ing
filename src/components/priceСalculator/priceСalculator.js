@@ -29,14 +29,14 @@ export default function PriceСalculator(props) {
         
     return (
         <div className={styles.priceСalculator}>
-            <div>           
+            <div> 
                 <DownloadTableExcel
-                    filename="users table"
-                    sheet="users"
-                    currentTableRef={tableRef.current}                    
-                >
-                    <button style={{fontSize:"16px", color:'red', fontWeight:"bold", marginTop:"15px"}}>Скачать расчет</button>                 
-                </DownloadTableExcel>                      
+                        filename="users table"
+                        sheet="users"
+                        currentTableRef={tableRef.current}                    
+                    >
+                        <button className={styles.button}>Скачать расчет</button>                 
+                </DownloadTableExcel>
             </div>
             <table ref={tableRef}>
                 <caption className={styles.titleTable}>Цена расчитывается автоматически, после введения исходных данных</caption>
@@ -117,8 +117,7 @@ export default function PriceСalculator(props) {
                     </tr>
 
                 </tbody>
-            </table> 
-          
+            </table>          
             
         </div>      
 

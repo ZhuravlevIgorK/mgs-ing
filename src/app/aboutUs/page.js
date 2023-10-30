@@ -6,7 +6,7 @@ import Image from "next/image";
 const staff = [
   {name: "Igor Zhuravlev", src: "/staff/IgorZ.jfif", post: "HVAC design engineer"},
   {name: "Vadim Minakov", src: "/staff/VadimM.jpg", post: "Electrical design engineer"},
-  {name: "Igor Mikhalev", src: "/staff/IgorM2.PNG", post: "Engineer designer of low-current networks"},
+  {name: "Igor Mikhalev", src: "/staff/IgorM2.jpg", post: "Engineer designer of low-current networks"},
   {name: "Ilya Korol", src: "/staff/IlyaK.PNG", post: "Engineer designer of water supply and sewerage"},
   {name: "Sergey Berezhnoy", src: "/staff/SergeyB.PNG", post: "HVAC design engineer"},  
 ]
