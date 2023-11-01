@@ -51,10 +51,10 @@ export default function Calculator() {
             <div>                            
                 <PriceСalculator squareObject={squareObject} typeObject={typeObject} meter={meterObject} />
             </div> 
-            <footer className={style.Footer}>
+            {/* <footer className={style.Footer}>
                 &copy; Все права защищены: 2022 - {new Date().getFullYear()} год.
                 <TelegramBot/> 
-            </footer>  
+            </footer>   */}
 
         </div>
     </div>    

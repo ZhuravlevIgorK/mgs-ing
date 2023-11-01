@@ -2,10 +2,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import MenuComponent from "./menuComponent/menuComponent";
-import Slider from "./slider/Slider"
+// import Slider from "./slider/Slider"
 import styles from './page.module.css';
 import React from 'react';
-import TelegramBot from "./telegramBot/telegramBot";
+// import TelegramBot from "./telegramBot/telegramBot";
 
 
 export default function Home() {
@@ -37,14 +37,14 @@ export default function Home() {
           <MenuComponent nameLink="Контакты" addressLinK="contacts" />              
         </nav>           
 
-        <div className={styles.ourObject}>
+        {/* <div className={styles.ourObject}>
            <Slider/>
-        </div>
+        </div> */}
 
-        <footer className={styles.Footer}>
+        {/* <footer className={styles.Footer}>
           &copy; Все права защищены: 2022 - {new Date().getFullYear()} год.
           <TelegramBot/> 
-        </footer>  
+        </footer>   */}
           
       </div>          
     </main>

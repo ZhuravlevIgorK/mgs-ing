@@ -33,14 +33,15 @@ export default function AboutUs() {
           </div>
 
           <div className={styles.ourStaffImages}>
-            {staff.map((e) => { 
+            {/* {staff.map((e) => { 
               return (               
                 <figure key="figureMy" className={styles.figureStaff}>        
                   <Image className={styles.img} src={e.src} width={250} height={260} alt="фото"/>
                   <figcaption className={styles.figcaptionImg}> {e.name} <br/>{e.post} </figcaption>
                 </figure>
               )
-            })}
+            })} */}
+            kcfukfc
           </div> 
         </div>         
       )

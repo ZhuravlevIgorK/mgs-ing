@@ -31,10 +31,10 @@ export default function Contact() {
                 </div>
             </div> 
 
-            <footer className={styles.Footer}>
+            {/* <footer className={styles.Footer}>
                 &copy; Все права защищены: 2022 - {new Date().getFullYear()} год.
                 <TelegramBot/> 
-            </footer>              
+            </footer>               */}
             
         </div>
        
