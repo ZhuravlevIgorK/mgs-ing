@@ -1,11 +1,11 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import MenuComponent from "./menuComponent/menuComponent";
-// import Slider from "./slider/Slider"
+import MenuComponent from "../components/menuComponent/menuComponent";
+import Slider from "../components/slider/Slider"
 import styles from './page.module.css';
 import React from 'react';
-// import TelegramBot from "./telegramBot/telegramBot";
+import TelegramBot from "../components/telegramBot/telegramBot";
 
 
 export default function Home() {
@@ -13,8 +13,9 @@ export default function Home() {
     <main >
       <div className={styles.homePage}>
         <div className={styles.videoWrapper}>
+        {/* loop autoPlay muted */}
             <video id='bgvideo' className={styles.video} loop autoPlay muted>
-              <source src="/myWorkSp.mp4" type="video/mp4"></source>
+              {/* <source src="/myWorkSp.mp4" type="video/mp4"></source> */}
               <source src="/myWorkSpWEBm.webm" type="video/webm"></source>
               Your browser does not support the video tag.              
             </video>           
@@ -37,14 +38,14 @@ export default function Home() {
           <MenuComponent nameLink="Контакты" addressLinK="contacts" />              
         </nav>           
 
-        {/* <div className={styles.ourObject}>
+        <div className={styles.ourObject}>
            <Slider/>
-        </div> */}
+        </div>
 
-        {/* <footer className={styles.Footer}>
+        <footer className={styles.Footer}>
           &copy; Все права защищены: 2022 - {new Date().getFullYear()} год.
           <TelegramBot/> 
-        </footer>   */}
+        </footer>  
           
       </div>          
     </main>

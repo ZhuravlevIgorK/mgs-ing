@@ -1,8 +1,8 @@
 'use client';
 import styles from "@/app/contacts/cont.module.css";
-import GoHome from "../goHome/goHome.js";
+import GoHome from "../../components/goHome/goHome.js";
 import Image from "next/image.js";
-import TelegramBot from "../telegramBot/telegramBot.js";
+import TelegramBot from "../../components/telegramBot/telegramBot.js";
 
 export default function Contact() {
     return (       
@@ -31,10 +31,10 @@ export default function Contact() {
                 </div>
             </div> 
 
-            {/* <footer className={styles.Footer}>
-                &copy; Все права защищены: 2022 - {new Date().getFullYear()} год.
+            <footer className={styles.Footer}>
+                {/* &copy; Все права защищены: 2022 - {new Date().getFullYear()} год. */}
                 <TelegramBot/> 
-            </footer>               */}
+            </footer>              
             
         </div>
        
