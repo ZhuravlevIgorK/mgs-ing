@@ -1,6 +1,5 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
 import MenuComponent from "../components/menuComponent/menuComponent";
 import Slider from "../components/slider/Slider"
 import styles from './page.module.css';
@@ -10,26 +9,23 @@ import TelegramBot from "../components/telegramBot/telegramBot";
 
 export default function Home() {
   return (
-    <main >
+    <main>
       <div className={styles.homePage}>
-        <div className={styles.videoWrapper}>
-        {/* loop autoPlay muted */}
+        <div className={styles.videoWrapper}>        
             <video id='bgvideo' className={styles.video} loop autoPlay muted>
-              {/* <source src="/myWorkSp.mp4" type="video/mp4"></source> */}
+              <source src="/myWorkSp.mp4" type="video/mp4"></source>
               <source src="/myWorkSpWEBm.webm" type="video/webm"></source>
               Your browser does not support the video tag.              
             </video>           
         </div>   
           
-        <div className={styles.titleMainPage}> 
-
+        <div className={styles.titleMainPage}>
           <Image className={styles.image} src="/МГС Инж.png" alt="МГС" width={160} height={180}/>
           <div className={styles.textNameCompany}>            
             <h2>Проектное бюро &laquo;МГС Инжиниринг&raquo;</h2> 
             <p>Создаем иновационные решения</p>            
           </div>
-          <div className={styles.emptyDiv}></div>
-          
+          <div className={styles.emptyDiv}></div>          
         </div>
 
         <nav className={styles.navMenu} >   

@@ -26,7 +26,7 @@ export default function Calculator() {
                             value={typeObject}
                             onChange={(e) => setTypeObject(e.target.value)}              
                         >
-                            <option selected disabled> --Выберите тип объекта-- </option>
+                            <option disabled> --Выберите тип объекта-- </option>
                             <option value="hous">Жилая недвижимость</option>
                             <option value="office">Офисная недвижимость</option>
                             <option value="factory">Производство</option>
@@ -52,7 +52,7 @@ export default function Calculator() {
                 <PriceСalculator squareObject={squareObject} typeObject={typeObject} meter={meterObject} />
             </div> 
             <footer className={style.Footer}>
-                {/* &copy; Все права защищены: 2022 - {new Date().getFullYear()} год. */}
+                &copy; Все права защищены: 2022 - {new Date().getFullYear()} год.
                 <TelegramBot/> 
             </footer>  
 

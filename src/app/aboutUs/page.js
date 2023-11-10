@@ -1,4 +1,3 @@
-import Link from "next/link"
 import styles from "./aboutUs.module.css"
 import GoHome from "../../components/goHome/goHome.js";
 import Image from "next/image";
@@ -22,11 +21,9 @@ export default function AboutUs() {
           <h1 className={styles.brendy1}>
             НАША
           </h1>
-
           <h1 className={styles.brendy2}>
             КОМАНДА
-          </h1>
-          
+          </h1>          
 
           <div className={styles.letters}>
             <span className={styles.letters2}>МГС</span><span className={styles.letters3}>инжиниринг</span>
@@ -35,7 +32,7 @@ export default function AboutUs() {
           <div className={styles.ourStaffImages}>
             {staff.map((e) => { 
               return (               
-                <figure key="figureMy" className={styles.figureStaff}>        
+                <figure className={styles.figureStaff}>        
                   <Image className={styles.img} src={e.src} width={250} height={260} alt="фото"/>
                   <figcaption className={styles.figcaptionImg}> {e.name} <br/>{e.post} </figcaption>
                 </figure>

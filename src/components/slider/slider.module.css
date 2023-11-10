@@ -17,10 +17,10 @@
 
 .image{ 
   object-fit: fill;    
-  animation: anim 1s linear forwards;
+  /* animation: anim 1s linear forwards; */
 }
 
-@keyframes anim{
+/* @keyframes anim{
   50%{
     opacity: 0;
     width: 0;
@@ -29,7 +29,7 @@
     opacity: 1;
     width: 640px;
   }  
-}
+} */
 
 .sliderName {
   display: flex;
@@ -41,7 +41,6 @@
 .elem {
   display: flex;
   gap: 0;
-  /* border-style: dashed; */
 }
 
 .text{

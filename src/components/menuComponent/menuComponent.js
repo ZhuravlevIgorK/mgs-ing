@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function MenuComponent(props) {
         return (
         <div className={styles.linkBox}>   
-            {/* <Image id="div" className={styles.imegLink} src='/pinci.png' width={35} height={35}/> */}
+            <Image id="div" className={styles.imegLink} src='/pinci.png' width={35} height={35}/>
           
             <Link className={styles.styleLink} href = {`${props.addressLinK}`} >
                 <div className={styles.styleText}>                    

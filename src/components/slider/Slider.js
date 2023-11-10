@@ -22,7 +22,8 @@ export default function Slider() {
              
             <div className={styles.sliderName}>                              
                 <h2>Наши объекты</h2>
-                <div className={styles.text}>Проектирование и монтаж инженерных сетей</div>                
+                <div className={styles.text}>Проектирование и монтаж инженерных сетей</div>    
+                
             </div>
 
             <p className={styles.text}>{data[numbImage].object}</p>           
@@ -37,8 +38,8 @@ export default function Slider() {
                 >&lang;
                 </button> 
 
-                <Image className={styles.image} src={data[numbImage].src} height={290} width={600} alt={"img object"}/>          
-            
+                <Image className={styles.image} src={data[numbImage].src} height={290} width={600} alt={"img object"}/>
+                          
                 <button className={styles.button}
                         onClick={(e) => { 
                             if (image < data.length-1 ) {
@@ -47,8 +48,7 @@ export default function Slider() {
                         }}
                     >&rang;
                 </button>
-            </div>
-                
+            </div>                
             
         </div>     
     )
