@@ -8,8 +8,7 @@ export default function Contact() {
                 <div >
                      &lArr; НАЗАД
                 </div>                
-            </Link>             
-            
+            </Link>       
         </div>
     )
 };

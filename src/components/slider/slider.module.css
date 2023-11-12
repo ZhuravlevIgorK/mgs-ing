@@ -7,29 +7,28 @@
 
 .button {
   width: 35px;
-  height: 290px;
- 
+  height: 290px; 
   font-size: 50px; 
   font-weight: bolder;
   border-style: none;
   background-color: rgba(255, 255, 255, 0);
 }
 
-.image{ 
-  object-fit: fill;    
-  /* animation: anim 1s linear forwards; */
+.button:active {
+  color: red;  
 }
 
-/* @keyframes anim{
-  50%{
-    opacity: 0;
-    width: 0;
-  }
-  100%{
-    opacity: 1;
-    width: 640px;
-  }  
-} */
+.image{ 
+  object-fit: fill;  
+  border-radius: 10px;   
+}
+
+.imageBorder {
+  border-style:dashed;
+  border-width: 1px;
+  border-radius: 10px;   
+  height: 290px;
+}
 
 .sliderName {
   display: flex;

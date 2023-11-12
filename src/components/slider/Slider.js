@@ -1,4 +1,3 @@
-'use client';
 import { useState } from "react";
 import styles from "./slider.module.css"
 import Image from "next/image";
@@ -15,7 +14,7 @@ const data = [
 
 export default function Slider() { 
     const [image, setImage] = useState(0);
-    let numbImage = image;
+    // let numbImage = image;
    
     return (
         <div className={styles.sliderBox}> 
@@ -26,7 +25,7 @@ export default function Slider() {
                 
             </div>
 
-            <p className={styles.text}>{data[numbImage].object}</p>           
+            <p className={styles.text}>{data[image].object}</p>           
                       
             <div className={styles.elem}>
                 <button className={styles.button}
@@ -38,7 +37,9 @@ export default function Slider() {
                 >&lang;
                 </button> 
 
-                <Image className={styles.image} src={data[numbImage].src} height={290} width={600} alt={"img object"}/>
+                <div className={styles.imageBorder}>
+                    <Image className={styles.image} src={data[image].src} height={290} width={600} alt={"img object"}/>
+                </div>
                           
                 <button className={styles.button}
                         onClick={(e) => { 

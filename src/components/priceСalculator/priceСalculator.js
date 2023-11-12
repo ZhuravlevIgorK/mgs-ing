@@ -2,7 +2,6 @@ import styles from "./priceСalculator.module.css";
 import { DownloadTableExcel } from 'react-export-table-to-excel';
 import { useRef } from "react";
 
-
 const ourPrice = {
     hous: { ОВиК:{П:50, РД:108}, ЭОМ:{П:43, РД:86}, СС:{П:36, РД: 76}, В:{П:22, РД: 32}, К:{П:22, РД: 32}, ЭЭ:{П:40,}, НВК:{П:220, РД:330},ТП:{П:120, РД:180}, СетиС:{П:72, РД:110}, ЭС:{П:90, РД:130}},
     office: { ОВиК:{П:57, РД:122}, ЭОМ:{П:49, РД:97}, СС:{П:41, РД: 85}, В:{П:24, РД: 36}, К:{П:24, РД: 36}, ЭЭ:{П:42,}, НВК:{П:220, РД:330},ТП:{П:120, РД:180}, СетиС:{П:72, РД:110}, ЭС:{П:90, РД:130}},
@@ -115,11 +114,8 @@ export default function PriceСalculator(props) {
                         <td id="П"> {meter*myPrice.СетиС.П} </td>
                         <td id="РД"> {meter*myPrice.СетиС.РД} </td>
                     </tr>
-
                 </tbody>
-            </table>          
-            
-        </div>      
-
+            </table> 
+        </div> 
     )
 }
