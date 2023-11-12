@@ -12,9 +12,9 @@ export default function Home() {
     <main>
       <div className={styles.homePage}>
         <div className={styles.videoWrapper}>        
-            <video id='bgvideo' className={styles.video} loop autoPlay muted>
+            <video id='bgvideo' className={styles.video} loop autoPlay muted poster='/fonMain.png'>
               <source src="/myWorkSp.mp4" type="video/mp4"></source>
-              <source src="/myWorkSpWEBm.webm" type="video/webm"></source>
+              {/* <source src="/myWorkSpWEBm.webm" type="video/webm"></source> */}
               Your browser does not support the video tag.              
             </video>           
         </div>   
