@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function TelegramBot() {
     const [nameUser, setNameUser] = useState('');
-    const [numbereUser, setNumberUser] = useState('');
+    const [numbereUser, setNumberUser] = useState();
 
     const Text = `${nameUser} ;   ${numbereUser}`  ;
     const botToken = '6642915905:AAHKhkEsOA-UL7bQm-49cn3Mo6hT02pIcLk';
@@ -22,9 +22,7 @@ export default function TelegramBot() {
             value={nameUser}
             placeholder={'Ваше имя'}
             type="text"
-            onInput={(e) => 
-                setNameUser(e.target.value)
-            }
+            onInput={(e) => setNameUser(e.target.value)}
         />
         <input
             className={styles.inputButton}
@@ -32,9 +30,7 @@ export default function TelegramBot() {
             placeholder={'Ваш номер телефона'}
             required
             type='tel.'
-            onInput={(e) => 
-                setNumberUser(e.target.value)
-            }
+            onInput={(e) => setNumberUser(e.target.value)}
         />       
 
     </div>

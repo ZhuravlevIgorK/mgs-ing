@@ -13,8 +13,7 @@ const data = [
 ];
 
 export default function Slider() { 
-    const [image, setImage] = useState(0);
-    // let numbImage = image;
+    const [image, setImage] = useState(0);   
    
     return (
         <div className={styles.sliderBox}> 
@@ -40,7 +39,7 @@ export default function Slider() {
                 <div className={styles.imageBorder}>
                     <Image className={styles.image} src={data[image].src} height={290} width={600} alt={"img object"}/>
                 </div>
-                          
+
                 <button className={styles.button}
                         onClick={(e) => { 
                             if (image < data.length-1 ) {

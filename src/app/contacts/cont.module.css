@@ -1,6 +1,6 @@
 .contact{
     text-align: center;  
-    background-image: url('/contact.jpg');    
+    background-image: url('/blueprint.jpg');     
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,8 +32,9 @@
     border-style: double;
     width: 600px;
     font-weight: bolder;    
-    margin: 40px 40px;   
+    margin: 8px 40px;   
     opacity: 0.9; 
+    border-radius: 15px;
 }
 
 .text{
@@ -60,6 +61,7 @@
 }
 
 .contacts {
+    border-style: double;
     background-color: antiquewhite;
     padding: 20px; 
     border-radius: 15px;

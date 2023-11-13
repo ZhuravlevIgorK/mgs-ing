@@ -26,7 +26,7 @@ export default function Calculator() {
                             value={typeObject}
                             onChange={(e) => setTypeObject(e.target.value)}              
                         >
-                            <option disabled> --Выберите тип объекта-- </option>
+                            <option value=""> --Выберите тип объекта-- </option>
                             <option value="hous">Жилая недвижимость</option>
                             <option value="office">Офисная недвижимость</option>
                             <option value="factory">Производство</option>
@@ -34,7 +34,7 @@ export default function Calculator() {
                         </select>             
                     </form>
                     
-                    <div className={style.calculatorClass}>Введите площадь объекта, м2 :</div>
+                    <div className={style.calculatorClass}>Введите площадь объекта, м2:</div>
                     <input 
                         type="number"  
                         value={squareObject} 
@@ -55,7 +55,6 @@ export default function Calculator() {
                 &copy; Все права защищены: 2022 - {new Date().getFullYear()} год.
                 <TelegramBot/> 
             </footer>  
-
         </div>
     </div>    
     )

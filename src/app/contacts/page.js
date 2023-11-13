@@ -26,8 +26,11 @@ export default function Contact() {
                         <br/>fax +7 (499)849-71-21   
                     </div>             
                 </div>
-                <div className={styles.map1}>    
-                <a href="https://yandex.ru/maps/?um=constructor%3A64c2cc8b5387373147ae9ca99c7fdc4a7c95c8ca33ed8fa826dce5f076d44534&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A64c2cc8b5387373147ae9ca99c7fdc4a7c95c8ca33ed8fa826dce5f076d44534&amp;width=600&amp;height=450&amp;lang=ru_RU" alt="" style={{border: '0'}} /></a>
+                <div>
+                    <h3>Мы на карте</h3>
+                    <div className={styles.map1}>                 
+                    <a href="https://yandex.ru/maps/?um=constructor%3A64c2cc8b5387373147ae9ca99c7fdc4a7c95c8ca33ed8fa826dce5f076d44534&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A64c2cc8b5387373147ae9ca99c7fdc4a7c95c8ca33ed8fa826dce5f076d44534&amp;width=600&amp;height=450&amp;lang=ru_RU" alt="" style={{borderRadius: '15px'}} /></a>
+                    </div>
                 </div>
             </div> 
 
