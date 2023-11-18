@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import MenuComponent from "../components/menuComponent/menuComponent";
-import Slider from "../components/slider/Slider"
+import Slider from "../components/slider/slider"
 import styles from './page.module.css';
 import React from 'react';
 import TelegramBot from "../components/telegramBot/telegramBot";
@@ -38,7 +38,7 @@ export default function Home() {
            <Slider/>
         </div>
 
-        <footer className={styles.Footer}>
+        <footer className={styles.footer}>
           &copy; Все права защищены: 2022 - {new Date().getFullYear()} год.
           <TelegramBot/> 
         </footer>  

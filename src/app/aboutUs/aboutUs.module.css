@@ -1,10 +1,20 @@
+.page {
+    text-align: center;  
+    padding-top: 20px;
+}
+
 .aboutUs{
     background: url('/aboutUs1.png') top left / 60% 60vh no-repeat, 
     url('/aboutUs2.png') right bottom / 60% 60vh no-repeat;       
     height: 100vh;    
     background-repeat: no-repeat; 
-    background-color: #e2e3f0fd;
-    text-align: center;     
+    background-color: #e2e3f0fd;    
+    position: fixed;
+    left: 0px; 
+    right: 0px; 
+    top: 0px; 
+    bottom: 0px;
+    z-index: -1;    
 }
 
 .goHomeButton{

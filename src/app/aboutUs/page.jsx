@@ -1,5 +1,5 @@
 import styles from "./aboutUs.module.css"
-import GoHome from "../../components/goHome/goHome.js";
+import GoHome from "../../components/goHome/goHome.jsx";
 import Image from "next/image";
 
 const staff = [
@@ -13,7 +13,8 @@ const staff = [
 
 export default function AboutUs() {
     return (
-        <div className={styles.aboutUs}>          
+        <div className={styles.page}> 
+          <div className={styles.aboutUs}></div>        
 
           <div className={styles.goHomeButton}>            
             <GoHome />
@@ -32,7 +33,7 @@ export default function AboutUs() {
           <div className={styles.ourStaffImages}>
             {staff.map((e) => { 
               return (               
-                <figure key={"myImage"} className={styles.figureStaff}>        
+                <figure key={e.name} className={styles.figureStaff}>        
                   <Image className={styles.img} src={e.src} width={250} height={260} alt="фото"/>
                   <figcaption className={styles.figcaptionImg}> {e.name} <br/>{e.post} </figcaption>
                 </figure>
